@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"github.com/juliosueiras/chovy-sign-cli/cmakeys"
+	"github.com/juliosueiras/chovy-sign-cli/kirk"
+	"os"
 )
 
 func main() {
-	fmt.Println(cmakeys.GenerateKeyStr("***REMOVED***"))
+	cmakeys.GenerateKeyStr(os.Args[1])
+	kirk.KirkInit()
 }
