@@ -1,12 +1,9 @@
 package main
 
 import (
-	"github.com/juliosueiras/chovy-sign-cli/cmakeys"
-	"github.com/juliosueiras/chovy-sign-cli/kirk"
-	"os"
+	"github.com/juliosueiras/chovy-sign-cli/pbp"
 )
 
 func main() {
-	cmakeys.GenerateKeyStr(os.Args[1])
-	kirk.KirkInit()
+	pbp.GenPbpFromIso("test", "test", "test", "test", "test", false)
 }
